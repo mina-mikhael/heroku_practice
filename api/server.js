@@ -11,4 +11,8 @@ server.get("/", (req, res) => {
   res.json({ message: "Hello World" });
 });
 
+server.post("/api/mirror", (req, res) => {
+  res.status(201).json(req.body);
+});
+
 module.exports = server;
