@@ -12,7 +12,7 @@ server.get("/", (req, res) => {
 });
 
 server.post("/api/mirror", (req, res) => {
-  res.status(201).json(req.body);
+  res.status(201).json(process.env.SUBZERO);
 });
 
 module.exports = server;
